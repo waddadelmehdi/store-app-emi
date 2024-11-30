@@ -1,0 +1,21 @@
+<div class="client-list-card border- p-3">
+  <h2 class="mt-5">Product List</h2>
+  <table class="product-table">
+    <thead>
+    <tr>
+      <th>ID</th>
+      <th>Name</th>
+      <th>Price</th>
+      <th>Quantity</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let product of products">
+      <td>{{ product.id }}</td>
+      <td>{{ product.name }}</td>
+      <td>{{ product.price }}</td>
+      <td>{{ product.quantity }}</td>
+    </tr>
+    </tbody>
+  </table>
+</div>

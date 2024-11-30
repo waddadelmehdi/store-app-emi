@@ -52,4 +52,15 @@ public class ClientService implements ClientManager{
     public Client getClientById(Long id) {
         return clientRepository.findClientById(id);
     }
+
+    @Override
+    public boolean deleteClientById(Long id) {
+        try {
+            deleteClientById(id);
+            return true;
+        }catch (Exception e){
+            System.out.println(e.getMessage());
+            return false;
+        }
+    }
 }

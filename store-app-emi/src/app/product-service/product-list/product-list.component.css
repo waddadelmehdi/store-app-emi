@@ -1,0 +1,62 @@
+/* Styling for the Product List Table */
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  background-color: #f9f9f9;
+}
+h2{
+  margin-left: 10rem;
+}
+
+/* Table Container */
+table {
+  width: 80%;
+  margin: 20px auto;
+  border-collapse: collapse;
+  background: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Table Header Styling */
+th {
+  background-color: #4CAF50;
+  color: white;
+  text-align: left;
+  padding: 10px;
+  font-size: 16px;
+}
+
+/* Table Cell Styling */
+td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+/* Row Hover Effect */
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+tr:hover {
+  background-color: #f1f9ff;
+}
+
+/* Table Caption Styling */
+caption {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 10px 0;
+  text-align: left;
+}
+
+/* Table Footer */
+tfoot td {
+  font-weight: bold;
+  background-color: #e8f5e9;
+}
+
+/* Additional Styling */
+th, td {
+  padding: 15px;
+}

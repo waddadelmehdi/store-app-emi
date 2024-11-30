@@ -1,0 +1,13 @@
+<div>
+  <form (ngSubmit)="addClient()">
+    <div>
+      <label for="name">Name:</label>
+      <input type="text" id="name" [(ngModel)]="client.name" name="name" required />
+    </div>
+    <div>
+      <label for="email">Email:</label>
+      <input type="text" id="email" [(ngModel)]="client.email" name="email" required />
+    </div>
+    <button type="submit">{{ client.id ? 'Update' : 'Add' }}</button>
+  </form>
+</div>

@@ -1,0 +1,96 @@
+/* General Body Styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  background-color: #f9f9f9;
+}
+
+/* Table Styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+}
+
+/* Table Header Styling */
+table thead th {
+  background-color: #4CAF50;
+  color: white;
+  text-align: left;
+  padding: 10px;
+  font-size: 16px;
+}
+
+/* Table Rows Styling */
+table tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+table tbody tr:nth-child(odd) {
+  background-color: #ffffff;
+}
+
+table tbody tr:hover {
+  background-color: #d1f7d1;
+  transition: background-color 0.3s;
+}
+
+/* Table Data Cells */
+table td,
+table th {
+  padding: 10px;
+  text-align: left;
+  border: 1px solid #ddd;
+  font-size: 14px;
+}
+
+/* Buttons Styling */
+button,
+.action-btn {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  color: white;
+}
+
+/* Edit Button */
+.action-btn.edit {
+  background-color: #4CAF50;
+}
+
+.action-btn.edit:hover {
+  background-color: #45a049;
+}
+
+/* Delete Button */
+.action-btn.delete {
+  background-color: #f44336;
+}
+
+.action-btn.delete:hover {
+  background-color: #e53935;
+}
+
+/* Link Styling */
+a {
+  text-decoration: none;
+  color: #4CAF50;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Header Styling */
+h1 {
+  color: #333333;
+  text-align: left;
+  font-size: 24px;
+  margin-bottom: 10px;
+}

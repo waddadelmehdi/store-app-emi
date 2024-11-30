@@ -10,4 +10,5 @@ public interface ClientManager {
     public Client updateClient(Client client);
     public List<Client> getAllClients();
     public Client getClientById(Long id);
+    boolean deleteClientById(Long id);
 }

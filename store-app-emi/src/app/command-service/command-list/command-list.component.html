@@ -1,0 +1,30 @@
+<div class="command-list">
+  <h1>Command List</h1>
+  <table>
+    <thead>
+    <tr>
+      <th>Command ID</th>
+      <th>Command Date</th>
+      <th>Client Name</th> <!-- Affiche le nom du client -->
+      <th>Products</th> <!-- Affiche les produits associés -->
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let command of commands">
+      <td>{{ command.id }}</td>
+      <td>{{ command.commandDate }}</td>
+      <td>{{ command.client.name }}</td>
+      <td>
+        <ul>
+          <!-- Parcourt la liste des productItems -->
+          <li *ngFor="let productItem of command.productItems">
+            {{ productItem.product.name }} -
+            Quantity: {{ productItem.quantity }} -
+            Unit Price: {{ productItem.unitPrice | currency:'USD':'symbol' }}
+          </li>
+        </ul>
+      </td>
+    </tr>
+    </tbody>
+  </table>
+</div>

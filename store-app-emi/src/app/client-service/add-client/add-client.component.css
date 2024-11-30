@@ -1,0 +1,77 @@
+/* General Body Styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  background-color: #f9f9f9;
+}
+
+/* Form Container */
+form {
+  width: 300px;
+  margin: 50px auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Input Labels */
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 14px;
+  color: #333333;
+  font-weight: bold;
+}
+
+/* Input Fields */
+input[type="text"],
+input[type="email"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 14px;
+  background-color: #fdfdfd;
+  transition: border-color 0.3s;
+}
+
+/* Input Focus Styling */
+input[type="text"]:focus,
+input[type="email"]:focus {
+  border-color: #4CAF50;
+  outline: none;
+  background-color: #f9fff9;
+}
+
+/* Button Styling */
+button,
+input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+/* Button Hover Effect */
+button:hover,
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+/* Form Header Styling */
+form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 18px;
+  color: #4CAF50;
+}

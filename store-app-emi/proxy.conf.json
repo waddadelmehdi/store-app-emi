@@ -1,0 +1,6 @@
+{
+  "/client-service": {
+    "target": "http://localhost:8888",
+    "secure": false
+  }
+}
