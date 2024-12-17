@@ -15,16 +15,15 @@ export class ClientService {
     return this.http.get(this.baseUrl+"/clients");
   }
 
-  getClient(id: number): Observable<any> {
-    return this.http.get(`${this.baseUrl}/${id}`);
-  }
-
   createClient(client: Client): Observable<any> {
     return this.http.post<Client>(this.baseUrl+"/addClient", client);
   }
 
-  updateClient(id: number, client: Client): Observable<any> {
-    return this.http.put<Client>(`${this.baseUrl}/${id}`, client);
+  updateClient(client: Client): Observable<any> {
+    if (!client.id) {
+      throw new Error('Client ID is required for updating.');
+    }
+    return this.http.put<Client>(`${this.baseUrl}/${client.id}`, client);
   }
 
   deleteClient(id: number): Observable<any> {
@@ -32,4 +31,7 @@ export class ClientService {
   }
 
 
+  getClientById(id: number): Observable<Client> {
+    return this.http.get<Client>(`${this.baseUrl}/${id}`); // Explicit type <Client>
+  }
 }

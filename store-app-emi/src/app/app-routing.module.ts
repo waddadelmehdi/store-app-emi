@@ -7,12 +7,14 @@ import {AddClientComponent} from './client-service/add-client/add-client.compone
 import {EditClientComponent} from './client-service/edit-client/edit-client.component';
 import {ProductListComponent} from './product-service/product-list/product-list.component';
 import {CommandListComponent} from './command-service/command-list/command-list.component';
+import {EmiStoreHomeComponent} from './emi-store-home/emi-store-home.component';
 
 const routes: Routes = [
+  { path :"", component : EmiStoreHomeComponent},
   { path :"clients", component : ClientsComponent},
   { path :"list-clients", component : ClientListComponent},
   { path :"add-client", component : AddClientComponent},
-  { path :"edit-client", component : EditClientComponent},
+  { path :"edit-client/:id", component : EditClientComponent},
   { path :"list-products", component : ProductListComponent},
   { path :"list-commands", component : CommandListComponent},
   { path :"home", component : HomePageComponent},

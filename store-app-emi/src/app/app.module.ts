@@ -12,6 +12,8 @@ import { ClientListComponent } from './client-service/client-list/client-list.co
 import { AddClientComponent } from './client-service/add-client/add-client.component';
 import { EditClientComponent } from './client-service/edit-client/edit-client.component';
 import { ProductListComponent } from './product-service/product-list/product-list.component';
+import { EmiStoreHomeComponent } from './emi-store-home/emi-store-home.component';
+import { UpdateClientComponent } from './client-service/update-client/update-client.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +25,8 @@ import { ProductListComponent } from './product-service/product-list/product-lis
     AddClientComponent,
     EditClientComponent,
     ProductListComponent,
+    EmiStoreHomeComponent,
+    UpdateClientComponent,
   ],
   imports: [
     BrowserModule,

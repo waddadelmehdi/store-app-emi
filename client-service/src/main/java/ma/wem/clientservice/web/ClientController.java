@@ -23,8 +23,8 @@ public class ClientController {
     public Client addClient(@RequestBody Client client) {
         return clientManager.addClient(client);
     }
-    @PutMapping("/updateClient")
-    public Client updateClient(@RequestBody Client client) {
+    @PutMapping("/updateClient/{id}")
+    public Client updateClient(@PathVariable Long id,@RequestBody Client client) {
         return clientManager.updateClient(client);
     }
     @DeleteMapping("/deleteClient")

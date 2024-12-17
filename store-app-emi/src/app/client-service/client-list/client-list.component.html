@@ -15,7 +15,9 @@
       <td>{{ client.name }}</td>
       <td>{{ client.email }}</td>
       <td class="p-3">
-        <button class="btn btn-success m-1" [routerLink]="['/edit-client', client.id]">Edit</button>
+        <button class="btn btn-success m-1" [routerLink]="['/edit-client', client.id]">
+          Edit
+        </button>
         <button class="btn btn-danger ms-lg-2" (click)="deleteClient(client.id)">Delete</button>
       </td>
     </tr>

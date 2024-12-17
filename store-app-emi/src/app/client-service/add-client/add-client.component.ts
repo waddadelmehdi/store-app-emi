@@ -13,7 +13,7 @@ export class AddClientComponent {
   constructor(private clientService: ClientService, private router: Router) {}
   addClient(): void {
     this.clientService.createClient(this.client).subscribe(() => {
-      this.router.navigate(['/clients']);
+      this.router.navigate(['/list-clients']);
     });
   }
 

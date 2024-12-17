@@ -5,8 +5,8 @@
     <tr>
       <th>Command ID</th>
       <th>Command Date</th>
-      <th>Client Name</th> <!-- Affiche le nom du client -->
-      <th>Products</th> <!-- Affiche les produits associés -->
+      <th>Client Name</th>
+      <th>Products</th>
     </tr>
     </thead>
     <tbody>
@@ -16,11 +16,10 @@
       <td>{{ command.client.name }}</td>
       <td>
         <ul>
-          <!-- Parcourt la liste des productItems -->
           <li *ngFor="let productItem of command.productItems">
             {{ productItem.product.name }} -
             Quantity: {{ productItem.quantity }} -
-            Unit Price: {{ productItem.unitPrice | currency:'USD':'symbol' }}
+             Price: {{ productItem.unitPrice | currency:'DH ':'symbol' }}
           </li>
         </ul>
       </td>
